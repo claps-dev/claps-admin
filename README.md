@@ -1,4 +1,4 @@
-# nuxt-project-2
+# nuxt-project-admin
 
 ## Build Setup
 
@@ -18,5 +18,4 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-# admin-4
 # claps-admin
