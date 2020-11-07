@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# claps-admin-vue
+# admin.claps.dev前端页面代码仓库
 
 ## Project setup
 ```
@@ -17,24 +15,26 @@ yarn serve
 yarn build
 ```
 
-### Lints and fixes files
+## 将前端部署到服务器端步骤
+
+### 执行命令生成dist文件包
 ```
-yarn lint
+yarn build
+```
+即可将该文件包部署到服务器端的nginx或tomcat的相应目录下
+
+## 相关端口及其他配置设置
+
+### 端口配置
+在vue.config.js文件中以下位置配置监听端口
+```
+"devServer": {
+    "port": 8001,
+  },
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-=======
->>>>>>> 11e5c24ca2cad1ece6e37d909fecb373ea4fe571
-# claps-admin
-
-## admin vue project
-Please check out [GitHub1074040117/claps-admin-vue](https://github.com/GitHub1074040117/claps-admin-vue).
-
-## admin go project
-Please check out [GitHub1074040117/claps-admin-go](https://github.com/GitHub1074040117/claps-admin-go).
-<<<<<<< HEAD
->>>>>>> 11e5c24ca2cad1ece6e37d909fecb373ea4fe571
-=======
->>>>>>> 11e5c24ca2cad1ece6e37d909fecb373ea4fe571
+### 后端api配置
+在utils/loginRequest.js以及request.js中配置后端api
+```
+baseURL: 'https://admin-api.claps.dev/',
+```
