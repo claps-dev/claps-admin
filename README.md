@@ -35,6 +35,7 @@ VUE_APP_API_URL='http://localhost:7003/'
 ```
 
 ### For server
+Edit the .env file
 ```
 # port
 VUE_APP_PORT=8001
