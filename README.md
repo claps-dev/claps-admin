@@ -1,5 +1,4 @@
-# admin.claps.dev前端页面代码仓库
-
+# admin.claps.dev
 ## Project setup
 ```
 yarn install
@@ -15,26 +14,31 @@ yarn serve
 yarn build
 ```
 
-## 将前端部署到服务器端步骤
+##  Deploy to the server side
 
-### 执行命令生成dist文件包
+### Execute the command to generate the dist package
 ```
 yarn build
 ```
-即可将该文件包部署到服务器端的nginx或tomcat的相应目录下
+the dist package is ready to be deployed to the server
 
-## 相关端口及其他配置设置
+## Port and other configuration settings
 
-### 端口配置
-在vue.config.js文件中以下位置配置监听端口
+### For development
+Edit the .env.development file
 ```
-"devServer": {
-    "port": 8001,
-  },
+# port for development
+VUE_APP_PORT=8001
+
+# base api url for development
+VUE_APP_API_URL='http://localhost:7003/'
 ```
 
-### 后端api配置
-在utils/loginRequest.js以及request.js中配置后端api
+### For server
 ```
-baseURL: 'https://admin-api.claps.dev/',
+# port
+VUE_APP_PORT=8001
+
+# base api url
+VUE_APP_API_URL='https://admin-api.claps.dev/'
 ```
