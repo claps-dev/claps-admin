@@ -1,46 +1,23 @@
-# admin.claps.dev
+# admin.claps.dev管理员后台
 
-## Project setup
-```
-yarn install
-```
+该管理员后台可以实现的功能：
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+①用户的github登录；
 
-### Compiles and minifies for production
-```
-yarn build
-```
+②有关claps.dev开源项目的添加、删除、修改等；
 
-##  Deploy to the server side
+③查看项目的捐赠流水；
 
-### Execute the command to generate the dist package
-```
-yarn build
-```
-the dist package is ready to be deployed to the server
+④管理后台管理员；
 
-## Port and other configuration settings
+## 基于claps.dev的管理员后台现在设计了两个代码库：
 
-### For development
-Edit the .env.development file
-```
-# port for development
-VUE_APP_PORT=8001
+admin-api.claps.dev是用go语言编写的后端代码；
 
-# base api url for development
-VUE_APP_API_URL='http://localhost:7003/'
-```
+admin.claps.dev是基于vue框架搭建的前端代码；
 
-### For server
-Edit the .env file
-```
-# port
-VUE_APP_PORT=8001
+以下是关于本次项目最新版本的github仓库地址
 
-# base api url
-VUE_APP_API_URL='https://admin-api.claps.dev/'
-```
+[homzer/admin-api.claps.dev](https://github.com/homzer/admin-api.claps.dev).
+
+[homzer/admin.claps.dev](https://github.com/homzer/admin.claps.dev).
